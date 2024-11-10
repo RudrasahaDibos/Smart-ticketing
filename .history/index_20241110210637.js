@@ -36,8 +36,6 @@ for (const element of allSeatBtn) {
     })
 }
 
-
-
 function getSeatCostElementById(id){
     const seatCosttext = document.getElementById(id).innerText
     const seatCost = parseInt(seatCosttext)

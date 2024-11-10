@@ -1,0 +1,1 @@
+const allSeatBtn = document.get

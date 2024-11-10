@@ -7,9 +7,7 @@ for (const element of allSeatBtn) {
 
          const selectedallElement = document.getElementById('selected-all-element')
          console.log(selectedallElement)
-         const div = document.createElement('div')
-         div.classList.add('flex')
-         div.classList.add('justify-between')
+         const div = document.getElementById('')
           const p1 = document.createElement('p')
           p1.classList.add('font-bold')
           p1.classList.add('ml-4')
@@ -22,21 +20,12 @@ for (const element of allSeatBtn) {
           p1.innerText= seatbtn
           p2.innerText ="Economoy"
           p3.innerText = Seatcost
-          div.appendChild(p1)
-          div.appendChild(p2)
-          div.appendChild(p3)
-          selectedallElement.appendChild(div)
-
-         
-          const seatAvaile = document.getElementById('seat-availe').innerText
-          const seatAvailenumber = parseInt(seatAvaile) -1;
-          document.getElementById('seat-availe').innerText = seatAvailenumber
-        
+          selectedallElement.appendChild(p1)
+          selectedallElement.appendChild(p2)
+          selectedallElement.appendChild(p3)
          
     })
 }
-
-
 
 function getSeatCostElementById(id){
     const seatCosttext = document.getElementById(id).innerText

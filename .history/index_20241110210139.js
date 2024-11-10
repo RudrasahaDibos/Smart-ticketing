@@ -27,16 +27,13 @@ for (const element of allSeatBtn) {
           div.appendChild(p3)
           selectedallElement.appendChild(div)
 
-         
-          const seatAvaile = document.getElementById('seat-availe').innerText
-          const seatAvailenumber = parseInt(seatAvaile) -1;
-          document.getElementById('seat-availe').innerText = seatAvailenumber
+
+          const seatAvaile = document.getElementById('seat-availe').inn
+           seatAvaile.innerText
         
          
     })
 }
-
-
 
 function getSeatCostElementById(id){
     const seatCosttext = document.getElementById(id).innerText
