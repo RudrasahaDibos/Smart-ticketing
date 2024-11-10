@@ -430,84 +430,64 @@
             <div
               class="border-dashed border-black border-2 mt-2  w-[0px] mx-auto h-[980px]"></div>
 
-            <div class=" w-2/5 ">
+            <div class="border-2  w-2/5 ">
               <p class="font-semibold text-xl ml-4">Select Your Seat</p>
               <div
                 class="border-dashed border-black border-2 mt-2  w-[400px] mx-auto h-0"></div>
 
               <div
-                class="bg-[#F7F8F8] w-[420px]  rounded-3xl mx-auto mt-8 p-4  ">
+                class="bg-[#F7F8F8] w-[420px] min-h rounded-3xl mx-auto mt-8 ">
                 <!-- table start here -->
-                        <div class="flex justify-between ">
-                           <p class="font-bold ml-4">seat <span>0</span></p>
-                           <p  class="font-bold">Class</p>
-                           <p  class="font-bold mr-4">price</p>
-                        </div>
-                        <div class="divider divider-start ml-4 w-[380px]"></div>
-                        <div class="flex justify-between ">
-                          <p class="font-bold ml-4"></p>
-                          <p  class="font-bold"></p>
-                          <p  class="font-bold mr-4"></p>
-                         
-                       </div>
+                <div class="overflow-x-auto">
+                  <table class="table">
+                    <!-- head -->
+                    <thead>
+                      <tr>
 
-                       <div class="divider divider-start ml-4 w-[380px]"></div>
+                        <th>seat <span
+                            class="bg-[#1DD100] rounded-full  border-2">0</span></th>
+                        <th>class</th>
+                        <th>price</th>
+                      </tr>
+                    </thead>
 
-                       <div class="flex justify-between">
-                        <p class="ml-4 font-bold">total Cost </p>
-                        <p class="mr-4 font-bold"><span>0</span></p>
-                       </div>
+                    <tbody>
+                      <!-- row 1 -->
+                      <tr>
 
-                       <label class="input input-bordered flex items-center gap-2 mt-8 w-[368px] h-[56px] ml-6 ">
-                        <input class="" type="text" class="grow" placeholder="Coupon Code" />
-                        <button class="btn bg-[#1DD100] ml-20 ">Apply</button>
-                      </label>
+                        <td>Cy Ganderton</td>
+                        <td>Quality Control Specialist</td>
+                        <td>Blue</td>
+                      </tr>
+                      <!-- row 2 -->
+                      <tr>
 
-                      <div class="flex justify-between mt-4">
-                        <p class="ml-4 font-bold">Grand Total</p>
-                        <p class="mr-4 font-bold"><span>0</span></p>
-                       </div>
-                    
+                        <th> totalCost</th>
+                        <th></th>
+                        <th>1111434540</th>
+                      </tr>
+                      <!-- row 3 -->
 
+                      <div class="p-4 absolute mt-36">
+                        <label
+                          class="input input-bordered flex items-center gap-2 w-[369px] h-[56px]">
+                          <input type="text" class="grow"
+                            placeholder="Coupon Code" />
+                          <button class="btn  bg-[#1DD100]">Apply</button>
+                        </label>
+                      </div>
+
+                    </tbody>
+                  </table>
+
+                  <div class="flex justify-between p-6 mt-12">
+                    <h1 class="font-bold">Grand total </h1>
+                    <h1><span class="font-bold">0</span></h1>
+                  </div>
+
+                </div>
                 <!-- table ends here -->
               </div>
-
-              <!-- input feild start here -->
-
-             <div class="flex flex-col justify-center items-center space-y-10 mt-8">
-              <label class="form-control w-full max-w-xs ">
-                <div class="label">
-                  <span class="label-text text-xl font-bold">Passenger Name*</span>
-                </div>
-                <input  type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs" />
-                
-              </label>
-              <label class="form-control w-full max-w-xs">
-                <div class="label">
-                  <span class="label-text text-xl font-bold">Phone Number*</span>
-                </div>
-                <input type="text" placeholder="Enter Your Phone Number" class="input input-bordered w-full max-w-xs" />
-                
-              </label>
-              <label class="form-control w-full max-w-xs">
-                <div class="label">
-                  <span class="label-text text-xl font-bold">Email ID</span>
-                </div>
-                <input type="text" placeholder="Enter Your Email Id" class="input input-bordered w-full max-w-xs" />
-                
-              </label>
-              <div class="form-control mt-6 w-[433px] h-[66px]">
-                <button class="btn  font-bold bg-[#1DD100]">Next</button>
-              </div>
-
-                <div class="flex  gap-4">
-                  <p class="font-bold">Terms and Conditions</p>
-                  <p class="font-bold">Cancellation Policy</p>
-                </div>
-
-             </div>
-
-              <!-- input field end here -->
 
             </div>
           </div>
