@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart-ticketing</title>
+    <!-- tailwind link -->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<!-- font awesome link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- google fonts  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Manrope:wght@200..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+<style>
+.raleway{
+  font-family: "Raleway", sans-serif;
+}
+</style>
+
+
+
+</head>
+<body>
+    <!-- header ends here -->
+    <header  class="container mx-auto lg:pl-24 lg:pr-24 lg:pt-4 w-[1400px]">
+               <div>
+                <!-- navbar starts here -->
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h8m-8 6h16" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                          <li><a>Home</a></li>
+                          <li><a>About</a></li>
+                          <li><a>Destination</a></li>
+                          <li><a>Search</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-2xl font-extrabold">E-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="btn text-[#1DD100]  border-1  text-xl">Bus <i class="fa-solid fa-van-shuttle"></i></a>
+                    </div>
+                  </div>
+               </div>
+
+              <!-- banner start here -->
+
+              <div
+              class="hero h-[550px] mt-8 bg-[url('/images/banner.png')] rounded-3xl relative">
+              
+              <div class="hero-content text-neutral-content text-center">
+                <div class="">
+                  <h1 class="mb-5 text-5xl font-extrabold">End-to-End Travel with <br> <span class="text-5xl text-[#1DD100]  font-extrabold">P Paribahan</span></h1>
+                  <p class="mb-5">
+                    A one-stop solution for your travel needs
+
+                    Introducing you to the Shohoz way of life
+                  </p>
+                  <button class="btn bg-[#1DD100] border-none">Buy Tickets</button>
+                </div>
+              </div>
+            </div>
+              
+             
+
+                 <!-- banner end here -->
+
+                <!-- 3 card start here  -->
+                 
+                        <div class=" flex justify-between items-center gap-4 pl-16 pr-16 absolute -bottom-4   ">
+                            <div class="stat flex bg-white justify-center items-center shadow-xl  border-b-4 border-b-[#1DD100]  rounded-2xl w-[338px] h-[138px]">
+                                <div class="text-[#1DD100] text-2xl font-extrabold ">
+                                    <i class="fa-solid fa-users"></i>
+                                  </div>
+                              
+                             <div>
+                                <div class="stat-value">500K+</div>
+                                <div class="stat-desc text-xl ">Registered users</div>
+                             </div>
+
+                           
+                            </div>
+                          
+                            <div class="stat flex bg-white justify-center items-center  border-b-4 border-b-[#1DD100] shadow-xl  rounded-2xl w-[338px] h-[138px]">
+                                <div class="text-[#1DD100] text-2xl font-extrabold ">
+                                    <i class="fa-solid fa-ticket  "></i>
+                                  
+                                  </div>
+                              
+                             <div>
+                                <div class="stat-value">1.7 lacks</div>
+                                <div class="stat-desc text-xl ">Tickets sold</div>
+                             </div>
+
+                           
+                            </div>
+                          
+                            <div class="stat flex bg-white justify-center items-center  border-b-4 border-b-[#1DD100] shadow-xl  rounded-2xl w-[338px] h-[138px]">
+                                <div class="text-[#1DD100] text-2xl font-extrabold ">
+                                    <i class="fa-solid fa-van-shuttle"></i>
+                                  
+                                  </div>
+                              
+                             <div>
+                                <div class="stat-value">80K+</div>
+                                <div class="stat-desc text-xl ">Rental partners</div>
+                             </div>
+
+                           
+                            </div>
+                          </div>
+                   
+
+
+
+                  <!-- 3 card ends here -->
+
+               <!-- navbar Ends here -->
+    </header>
+    <!-- header ends here -->
+
+
+     <!-- main start here -->
+    <main class="container mx-auto lg:pl-24 lg:pr-24 lg:pt-4 w-[1400px]" >
+                  <!-- Best offers for you start here -->
+                     <section class="mt-40">
+                               <h1 class="text-4xl font-semibold text-center">Best offers for you</h1>
+
+                                <div class="flex gap-4 mt-10">
+                                    <div class="bg-yellow-500  w-[573px] h-[220px]  rounded-2xl">
+                                      
+                                       
+                                     <div>
+                                      
+
+                                      <div class="border-2 w-[50%] mt-14 ml-14" >
+                                        <h1  class="text-4xl font-extrabold">15% OFF</h1>
+                                        <p class="text-xl font-bold">on your next purchase</p>
+                                        <p class="text-xl font-bold">use by January 2024</p>
+                                     </div>
+
+                                     <div class="border-2 w-1/4 -mt-14 ml-auto mr-  text-center" >
+                                      <h1  class="text-4xl font-extrabold">NEW15</h1>
+                                      <p class="text-xl font-bold">Coupon Code</p>
+                                     
+                                   </div>
+                                     </div>
+                                               <p class="bg-white w-[48px] h-[48px] absolute mx-auto rounded-full ml-80 -mt-8  "></p>
+                                               <p class="bg-white w-[48px] h-[48px] absolute mx-auto rounded-full ml-80 mt-52  "></p>
+                                               <p class="border-2 border-dotted border-white relative w-0 h-40 top-[32px] ml-[343px]  "></p>
+                                                
+                                               
+
+
+
+                                    </div>
+                                    <div class="bg-pink-400   w-[573px] h-[220px] rounded-2xl">
+
+                                    </div>
+                                </div>
+                     </section>
+
+                  <!-- Best offers for you ends here -->
+    </main>
+    <!-- main ends here -->
+
+
+
+    <!-- js add -->
+     <script src="index.js"></script>
+</body>
+</html>
