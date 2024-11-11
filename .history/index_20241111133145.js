@@ -7,7 +7,7 @@ for (const element of allSeatBtn) {
          const seatbtn = event.target.innerText
          const Seatcost = getSeatCostElementById('seat-cost')
          const selectedallElement = document.getElementById('selected-all-element')
-           event.target.setAttribute('disabled',false)
+         console.log(  event.target.setAttribute('disabled',false))
         
 
          const seatCount = document.getElementById('seat-count')
@@ -21,7 +21,7 @@ for (const element of allSeatBtn) {
             return ;
          }  
         event.target.style.backgroundColor ='#1DD100'
-       
+        console.log(event.target)
       
 
        
@@ -79,11 +79,10 @@ function ClickgetsetElementById(){
      
 
        if( seat && phoneNUmber ){    
+        
         Nextbutton.removeAttribute('disabled')
       }
-      else{
-        alert('booking your seat before must be type Valid Phone Number')
-      }
+      else
       
 }
 

@@ -1,5 +1,3 @@
-
-
 const allSeatBtn = document.getElementsByClassName('seat-btn')
 for (const element of allSeatBtn) {
     element.addEventListener('click',function(event){
@@ -7,21 +5,20 @@ for (const element of allSeatBtn) {
          const seatbtn = event.target.innerText
          const Seatcost = getSeatCostElementById('seat-cost')
          const selectedallElement = document.getElementById('selected-all-element')
-           event.target.setAttribute('disabled',false)
+         console.log(  event.target.setAttribute('disabled',false))
         
 
          const seatCount = document.getElementById('seat-count')
          const seatCountext = seatCount.innerText
          const seat = parseInt(seatCountext)  
       
-
           if(seat+1 > 4){
               
             alert('You maximum Bokking 4 seat ')
             return ;
          }  
         event.target.style.backgroundColor ='#1DD100'
-       
+        console.log(event.target)
       
 
        
@@ -61,28 +58,30 @@ for (const element of allSeatBtn) {
         selectedallElement.appendChild(div)
         getElementByIdPlus('seat-availe')
         getElementByIdminus('seat-count')
-        
+        InputNUmberCkack()
         ClickgetsetElementById()
 
          
     })
 }
 
-
+function InputNUmberCkack (){
+    const phoneNUmber = document.getElementById('phoneNUmber').value 
+    if(phoneNUmber){
+        Nextbutton.removeAttribute('disabled') 
+    }
+}
 
 function ClickgetsetElementById(){
     const seatCount = document.getElementById('seat-count')
     const seatCountext = seatCount.innerText
     const seat = parseInt(seatCountext) 
-    const phoneNUmber = document.getElementById('phoneNUmber').value 
+    // const phoneNUmber = document.getElementById('phoneNUmber').value 
      const Nextbutton = document.getElementById('Next_button')
-     
-
-       if( seat && phoneNUmber ){    
+    
+   
+      if( seat ){    
         Nextbutton.removeAttribute('disabled')
-      }
-      else{
-        alert('booking your seat before must be type Valid Phone Number')
       }
       
 }
